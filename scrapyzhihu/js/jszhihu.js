@@ -482,6 +482,7 @@ function v(e, t) {
 function b(e, t) {
     return 32 < t ? (t -= 32,
     new i(e.b << t | e.a >>> 32 - t,e.a << t | e.b >>> 32 - t)) : 0 !== t ? new i(e.a << t | e.b >>> 32 - t,e.b << t | e.a >>> 32 - t) : e
+
 }
 function g(e, t) {
     return e >>> t | e << 32 - t
@@ -746,12 +747,12 @@ function V(e, t) {
 
 
 function run(e,n){
-                    client_id = 'c3cef7c66a1843f8b3a9e6a1e3160e20';
-                    r = new a("SHA-1", "TEXT");
-                    r.setHMACKey("d1b964811afb40118a12068ff74a12f4", "TEXT");
-                    r.update(e);
-                    r.update(client_id);
-                    r.update("com.zhihu.web");
-                    r.update(String(n));
-                    return r.getHMAC("HEX")
-                }
+    client_id = 'c3cef7c66a1843f8b3a9e6a1e3160e20';
+    r = new a("SHA-1", "TEXT");
+    r.setHMACKey("d1b964811afb40118a12068ff74a12f4", "TEXT");
+    r.update(e);
+    r.update(client_id);
+    r.update("com.zhihu.web");
+    r.update(String(n));
+    return r.getHMAC("HEX")
+}
