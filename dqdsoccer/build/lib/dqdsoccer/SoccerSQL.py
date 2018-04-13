@@ -31,3 +31,8 @@ class SoccerSql():
         except MySQLdb.Warning, warning:
             print 'Warning:%s' %str(warning)
             db.rollback()
+
+if SoccerSql.player_exist('w')==1:
+    print '已经存在'
+else:
+    SoccerSql.insert_db('w', 'w', '', '', '9', '9')

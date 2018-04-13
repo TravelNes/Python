@@ -21,5 +21,4 @@ class DqdsoccerPipeline(object):
             if rest==1:
                 print '已经存在'
             else:
-                print '正在插入数据'
                 SoccerSql.insert_db(name, team, country, role, shirtnumber, rank)
