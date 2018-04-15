@@ -17,3 +17,12 @@ class DqdsoccerItem(scrapy.Item):
     country = scrapy.Field()
     role = scrapy.Field()
     shirtnumber = scrapy.Field()
+
+    appearance = scrapy.Field()
+    starts = scrapy.Field()
+    goals = scrapy.Field()
+    assists = scrapy.Field()
+    success_pass_rate = scrapy.Field()
+    avg_tackles = scrapy.Field()
+    avg_interceptions = scrapy.Field()
+    avg_clearances = scrapy.Field()

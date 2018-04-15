@@ -103,7 +103,8 @@ AGENTS = [
     "Mozilla/5.0 (Linux; U; Android 1.6; en-us; SonyEricssonX10i Build/R1AA056) AppleWebKit/528.5  (KHTML, like Gecko) Version/3.1.2 Mobile Safari/525.20.1",
 ]
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
-#USER_AGENT = 'dqdsoccer (+http://www.yourdomain.com)'
+# USER_AGENT = 'dqdsoccer (+http://www.yourdomain.com)'
+# LOG
 
 # Obey robots.txt rules
 ROBOTSTXT_OBEY = False
@@ -116,8 +117,8 @@ CONCURRENT_REQUESTS = 32
 # See also autothrottle settings and docs
 DOWNLOAD_DELAY = 0.25
 # The download delay setting will honor only one of:
-CONCURRENT_REQUESTS_PER_DOMAIN = 32
-#CONCURRENT_REQUESTS_PER_IP = 16
+# CONCURRENT_REQUESTS_PER_DOMAIN = 16
+# CONCURRENT_REQUESTS_PER_IP = 16
 
 # Disable cookies (enabled by default)
 #COOKIES_ENABLED = False

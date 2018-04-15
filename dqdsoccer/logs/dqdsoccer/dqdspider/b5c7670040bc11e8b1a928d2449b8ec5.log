@@ -1,0 +1,816 @@
+2018-04-15 22:53:10 [scrapy.utils.log] INFO: Scrapy 1.5.0 started (bot: dqdsoccer)
+2018-04-15 22:53:10 [scrapy.utils.log] INFO: Versions: lxml 4.1.1.0, libxml2 2.9.7, cssselect 1.0.3, parsel 1.4.0, w3lib 1.19.0, Twisted 17.9.0, Python 2.7.14 (default, Sep 25 2017, 09:54:19) - [GCC 4.2.1 Compatible Apple LLVM 9.0.0 (clang-900.0.37)], pyOpenSSL 17.5.0 (OpenSSL 1.1.0g  2 Nov 2017), cryptography 2.1.4, Platform Darwin-17.2.0-x86_64-i386-64bit
+2018-04-15 22:53:10 [scrapy.crawler] INFO: Overridden settings: {'NEWSPIDER_MODULE': 'dqdsoccer.spiders', 'SPIDER_MODULES': ['dqdsoccer.spiders'], 'AUTOTHROTTLE_ENABLED': True, 'BOT_NAME': 'dqdsoccer', 'LOG_FILE': 'logs/dqdsoccer/dqdspider/b5c7670040bc11e8b1a928d2449b8ec5.log', 'DOWNLOAD_DELAY': 0.25}
+2018-04-15 22:53:10 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.throttle.AutoThrottle']
+2018-04-15 22:53:10 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'dqdsoccer.middlewares.UserAgentmiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'dqdsoccer.middlewares.DqdsoccerDownloaderMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2018-04-15 22:53:10 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-04-15 22:53:10 [scrapy.middleware] INFO: Enabled item pipelines:
+['dqdsoccer.pipelines.DqdsoccerPipeline']
+2018-04-15 22:53:10 [scrapy.core.engine] INFO: Spider opened
+2018-04-15 22:53:10 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-04-15 22:53:10 [dqdspider] INFO: Spider opened: dqdspider
+2018-04-15 22:53:10 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023
+2018-04-15 22:53:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/fifa/club_rank?version=595> (referer: None)
+2018-04-15 22:53:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/team/members/50000804> (referer: https://api.dongqiudi.com/data/fifa/club_rank?version=595)
+2018-04-15 22:53:17 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/team/members/50001760> (referer: https://api.dongqiudi.com/data/fifa/club_rank?version=595)
+2018-04-15 22:53:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/team/members/50000233> (referer: https://api.dongqiudi.com/data/fifa/club_rank?version=595)
+2018-04-15 22:53:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/team/members/50001685> (referer: https://api.dongqiudi.com/data/fifa/club_rank?version=595)
+2018-04-15 22:53:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/team/members/50000535> (referer: https://api.dongqiudi.com/data/fifa/club_rank?version=595)
+2018-04-15 22:53:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/team/members/50000035> (referer: https://api.dongqiudi.com/data/fifa/club_rank?version=595)
+2018-04-15 22:53:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/team/members/50001641> (referer: https://api.dongqiudi.com/data/fifa/club_rank?version=595)
+2018-04-15 22:53:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/team/members/50008568> (referer: https://api.dongqiudi.com/data/fifa/club_rank?version=595)
+2018-04-15 22:53:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/team/members/50001758> (referer: https://api.dongqiudi.com/data/fifa/club_rank?version=595)
+2018-04-15 22:53:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/team/members/50001754> (referer: https://api.dongqiudi.com/data/fifa/club_rank?version=595)
+2018-04-15 22:53:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/team/members/50001587> (referer: https://api.dongqiudi.com/data/fifa/club_rank?version=595)
+2018-04-15 22:53:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/team/members/50000809> (referer: https://api.dongqiudi.com/data/fifa/club_rank?version=595)
+2018-04-15 22:53:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/team/members/50000807> (referer: https://api.dongqiudi.com/data/fifa/club_rank?version=595)
+2018-04-15 22:53:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/team/members/50001905> (referer: https://api.dongqiudi.com/data/fifa/club_rank?version=595)
+2018-04-15 22:53:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/team/members/50001982> (referer: https://api.dongqiudi.com/data/fifa/club_rank?version=595)
+2018-04-15 22:53:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/team/members/50000735> (referer: https://api.dongqiudi.com/data/fifa/club_rank?version=595)
+2018-04-15 22:53:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/team/members/50001256> (referer: https://api.dongqiudi.com/data/fifa/club_rank?version=595)
+2018-04-15 22:53:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/person/statistic_new/50397361> (referer: https://api.dongqiudi.com/data/v1/team/members/50000804)
+2018-04-15 22:53:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/person/statistic_new/50213707> (referer: https://api.dongqiudi.com/data/v1/team/members/50001760)
+2018-04-15 22:53:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/person/statistic_new/50432771> (referer: https://api.dongqiudi.com/data/v1/team/members/50000233)
+2018-04-15 22:53:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/person/statistic_new/50063292> (referer: https://api.dongqiudi.com/data/v1/team/members/50001685)
+2018-04-15 22:53:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/person/statistic_new/50035995> (referer: https://api.dongqiudi.com/data/v1/team/members/50000535)
+2018-04-15 22:53:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/person/statistic_new/50387943> (referer: https://api.dongqiudi.com/data/v1/team/members/50000035)
+2018-04-15 22:53:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/person/statistic_new/50226434> (referer: https://api.dongqiudi.com/data/v1/team/members/50001641)
+2018-04-15 22:53:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/person/statistic_new/50397608> (referer: https://api.dongqiudi.com/data/v1/team/members/50008568)
+2018-04-15 22:53:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/person/statistic_new/50225832> (referer: https://api.dongqiudi.com/data/v1/team/members/50001758)
+2018-04-15 22:53:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/person/statistic_new/50387544> (referer: https://api.dongqiudi.com/data/v1/team/members/50001754)
+2018-04-15 22:53:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/person/statistic_new/50270902> (referer: https://api.dongqiudi.com/data/v1/team/members/50001587)
+2018-04-15 22:53:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/person/statistic_new/50218067> (referer: https://api.dongqiudi.com/data/v1/team/members/50000809)
+2018-04-15 22:53:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/person/statistic_new/50197520> (referer: https://api.dongqiudi.com/data/v1/team/members/50000807)
+2018-04-15 22:53:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/person/statistic_new/50100815> (referer: https://api.dongqiudi.com/data/v1/team/members/50001905)
+2018-04-15 22:53:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/person/statistic_new/50410712> (referer: https://api.dongqiudi.com/data/v1/team/members/50001982)
+2018-04-15 22:53:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/person/statistic_new/50170148> (referer: https://api.dongqiudi.com/data/v1/team/members/50000735)
+2018-04-15 22:53:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/person/statistic_new/50406179> (referer: https://api.dongqiudi.com/data/v1/team/members/50001256)
+2018-04-15 22:53:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/sample/person/50397361> (referer: https://api.dongqiudi.com/data/v1/person/statistic_new/50397361)
+2018-04-15 22:53:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.dongqiudi.com/data/v1/sample/person/50397361>
+None
+2018-04-15 22:53:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/sample/person/50213707> (referer: https://api.dongqiudi.com/data/v1/person/statistic_new/50213707)
+2018-04-15 22:53:39 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.dongqiudi.com/data/v1/sample/person/50213707>
+None
+2018-04-15 22:53:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/sample/person/50432771> (referer: https://api.dongqiudi.com/data/v1/person/statistic_new/50432771)
+2018-04-15 22:53:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.dongqiudi.com/data/v1/sample/person/50432771>
+None
+2018-04-15 22:53:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/sample/person/50063292> (referer: https://api.dongqiudi.com/data/v1/person/statistic_new/50063292)
+2018-04-15 22:53:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.dongqiudi.com/data/v1/sample/person/50063292>
+None
+2018-04-15 22:53:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/sample/person/50035995> (referer: https://api.dongqiudi.com/data/v1/person/statistic_new/50035995)
+2018-04-15 22:53:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.dongqiudi.com/data/v1/sample/person/50035995>
+None
+2018-04-15 22:53:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/sample/person/50387943> (referer: https://api.dongqiudi.com/data/v1/person/statistic_new/50387943)
+2018-04-15 22:53:41 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.dongqiudi.com/data/v1/sample/person/50387943>
+None
+2018-04-15 22:53:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/sample/person/50226434> (referer: https://api.dongqiudi.com/data/v1/person/statistic_new/50226434)
+2018-04-15 22:53:41 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.dongqiudi.com/data/v1/sample/person/50226434>
+None
+2018-04-15 22:53:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/sample/person/50397608> (referer: https://api.dongqiudi.com/data/v1/person/statistic_new/50397608)
+2018-04-15 22:53:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.dongqiudi.com/data/v1/sample/person/50397608>
+None
+2018-04-15 22:53:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/sample/person/50225832> (referer: https://api.dongqiudi.com/data/v1/person/statistic_new/50225832)
+2018-04-15 22:53:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.dongqiudi.com/data/v1/sample/person/50225832>
+None
+2018-04-15 22:53:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/sample/person/50387544> (referer: https://api.dongqiudi.com/data/v1/person/statistic_new/50387544)
+2018-04-15 22:53:43 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.dongqiudi.com/data/v1/sample/person/50387544>
+None
+2018-04-15 22:53:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/sample/person/50270902> (referer: https://api.dongqiudi.com/data/v1/person/statistic_new/50270902)
+2018-04-15 22:53:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.dongqiudi.com/data/v1/sample/person/50270902>
+None
+2018-04-15 22:53:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/sample/person/50218067> (referer: https://api.dongqiudi.com/data/v1/person/statistic_new/50218067)
+2018-04-15 22:53:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.dongqiudi.com/data/v1/sample/person/50218067>
+None
+2018-04-15 22:53:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/sample/person/50197520> (referer: https://api.dongqiudi.com/data/v1/person/statistic_new/50197520)
+2018-04-15 22:53:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.dongqiudi.com/data/v1/sample/person/50197520>
+None
+2018-04-15 22:53:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/sample/person/50100815> (referer: https://api.dongqiudi.com/data/v1/person/statistic_new/50100815)
+2018-04-15 22:53:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.dongqiudi.com/data/v1/sample/person/50100815>
+None
+2018-04-15 22:53:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/sample/person/50410712> (referer: https://api.dongqiudi.com/data/v1/person/statistic_new/50410712)
+2018-04-15 22:53:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.dongqiudi.com/data/v1/sample/person/50410712>
+None
+2018-04-15 22:53:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/sample/person/50170148> (referer: https://api.dongqiudi.com/data/v1/person/statistic_new/50170148)
+2018-04-15 22:53:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.dongqiudi.com/data/v1/sample/person/50170148>
+None
+2018-04-15 22:53:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/sample/person/50406179> (referer: https://api.dongqiudi.com/data/v1/person/statistic_new/50406179)
+2018-04-15 22:53:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.dongqiudi.com/data/v1/sample/person/50406179>
+None
+2018-04-15 22:53:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/person/statistic_new/50150831> (referer: https://api.dongqiudi.com/data/v1/team/members/50001256)
+2018-04-15 22:53:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/person/statistic_new/50041055> (referer: https://api.dongqiudi.com/data/v1/team/members/50001256)
+2018-04-15 22:53:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/person/statistic_new/50010976> (referer: https://api.dongqiudi.com/data/v1/team/members/50001256)
+2018-04-15 22:53:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/person/statistic_new/50010962> (referer: https://api.dongqiudi.com/data/v1/team/members/50001256)
+2018-04-15 22:53:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/person/statistic_new/50237490> (referer: https://api.dongqiudi.com/data/v1/team/members/50001256)
+2018-04-15 22:53:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/person/statistic_new/50233352> (referer: https://api.dongqiudi.com/data/v1/team/members/50001256)
+2018-04-15 22:53:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/person/statistic_new/50201964> (referer: https://api.dongqiudi.com/data/v1/team/members/50001256)
+2018-04-15 22:53:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/person/statistic_new/50149179> (referer: https://api.dongqiudi.com/data/v1/team/members/50001256)
+2018-04-15 22:53:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/person/statistic_new/50126275> (referer: https://api.dongqiudi.com/data/v1/team/members/50001256)
+2018-04-15 22:53:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/person/statistic_new/50098252> (referer: https://api.dongqiudi.com/data/v1/team/members/50001256)
+2018-04-15 22:53:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/person/statistic_new/50040065> (referer: https://api.dongqiudi.com/data/v1/team/members/50001256)
+2018-04-15 22:53:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/person/statistic_new/50031248> (referer: https://api.dongqiudi.com/data/v1/team/members/50001256)
+2018-04-15 22:53:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/person/statistic_new/50030397> (referer: https://api.dongqiudi.com/data/v1/team/members/50001256)
+2018-04-15 22:53:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/person/statistic_new/50015517> (referer: https://api.dongqiudi.com/data/v1/team/members/50001256)
+2018-04-15 22:53:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/person/statistic_new/50013041> (referer: https://api.dongqiudi.com/data/v1/team/members/50001256)
+2018-04-15 22:53:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/person/statistic_new/50012650> (referer: https://api.dongqiudi.com/data/v1/team/members/50001256)
+2018-04-15 22:53:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/person/statistic_new/50434343> (referer: https://api.dongqiudi.com/data/v1/team/members/50001256)
+2018-04-15 22:53:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/sample/person/50150831> (referer: https://api.dongqiudi.com/data/v1/person/statistic_new/50150831)
+2018-04-15 22:53:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.dongqiudi.com/data/v1/sample/person/50150831>
+None
+2018-04-15 22:53:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/sample/person/50041055> (referer: https://api.dongqiudi.com/data/v1/person/statistic_new/50041055)
+2018-04-15 22:53:53 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.dongqiudi.com/data/v1/sample/person/50041055>
+None
+2018-04-15 22:53:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/sample/person/50010976> (referer: https://api.dongqiudi.com/data/v1/person/statistic_new/50010976)
+2018-04-15 22:53:53 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.dongqiudi.com/data/v1/sample/person/50010976>
+None
+2018-04-15 22:53:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/sample/person/50010962> (referer: https://api.dongqiudi.com/data/v1/person/statistic_new/50010962)
+2018-04-15 22:53:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.dongqiudi.com/data/v1/sample/person/50010962>
+None
+2018-04-15 22:53:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/sample/person/50237490> (referer: https://api.dongqiudi.com/data/v1/person/statistic_new/50237490)
+2018-04-15 22:53:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.dongqiudi.com/data/v1/sample/person/50237490>
+None
+2018-04-15 22:53:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/sample/person/50233352> (referer: https://api.dongqiudi.com/data/v1/person/statistic_new/50233352)
+2018-04-15 22:53:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.dongqiudi.com/data/v1/sample/person/50233352>
+None
+2018-04-15 22:53:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/sample/person/50201964> (referer: https://api.dongqiudi.com/data/v1/person/statistic_new/50201964)
+2018-04-15 22:53:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.dongqiudi.com/data/v1/sample/person/50201964>
+None
+2018-04-15 22:53:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/sample/person/50149179> (referer: https://api.dongqiudi.com/data/v1/person/statistic_new/50149179)
+2018-04-15 22:53:56 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.dongqiudi.com/data/v1/sample/person/50149179>
+None
+2018-04-15 22:53:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/sample/person/50126275> (referer: https://api.dongqiudi.com/data/v1/person/statistic_new/50126275)
+2018-04-15 22:53:57 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.dongqiudi.com/data/v1/sample/person/50126275>
+None
+2018-04-15 22:53:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/sample/person/50098252> (referer: https://api.dongqiudi.com/data/v1/person/statistic_new/50098252)
+2018-04-15 22:53:57 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.dongqiudi.com/data/v1/sample/person/50098252>
+None
+2018-04-15 22:53:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/sample/person/50040065> (referer: https://api.dongqiudi.com/data/v1/person/statistic_new/50040065)
+2018-04-15 22:53:57 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.dongqiudi.com/data/v1/sample/person/50040065>
+None
+2018-04-15 22:53:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/sample/person/50031248> (referer: https://api.dongqiudi.com/data/v1/person/statistic_new/50031248)
+2018-04-15 22:53:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.dongqiudi.com/data/v1/sample/person/50031248>
+None
+2018-04-15 22:53:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/sample/person/50030397> (referer: https://api.dongqiudi.com/data/v1/person/statistic_new/50030397)
+2018-04-15 22:53:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.dongqiudi.com/data/v1/sample/person/50030397>
+None
+2018-04-15 22:53:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/sample/person/50015517> (referer: https://api.dongqiudi.com/data/v1/person/statistic_new/50015517)
+2018-04-15 22:53:59 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.dongqiudi.com/data/v1/sample/person/50015517>
+None
+2018-04-15 22:53:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/sample/person/50013041> (referer: https://api.dongqiudi.com/data/v1/person/statistic_new/50013041)
+2018-04-15 22:53:59 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.dongqiudi.com/data/v1/sample/person/50013041>
+None
+2018-04-15 22:54:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/sample/person/50012650> (referer: https://api.dongqiudi.com/data/v1/person/statistic_new/50012650)
+2018-04-15 22:54:00 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.dongqiudi.com/data/v1/sample/person/50012650>
+None
+2018-04-15 22:54:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/sample/person/50434343> (referer: https://api.dongqiudi.com/data/v1/person/statistic_new/50434343)
+2018-04-15 22:54:00 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.dongqiudi.com/data/v1/sample/person/50434343>
+None
+2018-04-15 22:54:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/person/statistic_new/50281179> (referer: https://api.dongqiudi.com/data/v1/team/members/50001256)
+2018-04-15 22:54:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/person/statistic_new/50157070> (referer: https://api.dongqiudi.com/data/v1/team/members/50001256)
+2018-04-15 22:54:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/person/statistic_new/50150830> (referer: https://api.dongqiudi.com/data/v1/team/members/50001256)
+2018-04-15 22:54:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/person/statistic_new/50125795> (referer: https://api.dongqiudi.com/data/v1/team/members/50001256)
+2018-04-15 22:54:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/person/statistic_new/50111168> (referer: https://api.dongqiudi.com/data/v1/team/members/50001256)
+2018-04-15 22:54:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/person/statistic_new/50078976> (referer: https://api.dongqiudi.com/data/v1/team/members/50001256)
+2018-04-15 22:54:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/person/statistic_new/50043508> (referer: https://api.dongqiudi.com/data/v1/team/members/50001256)
+2018-04-15 22:54:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/person/statistic_new/50030660> (referer: https://api.dongqiudi.com/data/v1/team/members/50001256)
+2018-04-15 22:54:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/person/statistic_new/50030393> (referer: https://api.dongqiudi.com/data/v1/team/members/50001256)
+2018-04-15 22:54:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/person/statistic_new/50018314> (referer: https://api.dongqiudi.com/data/v1/team/members/50001256)
+2018-04-15 22:54:10 [scrapy.extensions.logstats] INFO: Crawled 96 pages (at 96 pages/min), scraped 34 items (at 34 items/min)
+2018-04-15 22:54:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/person/statistic_new/50016810> (referer: https://api.dongqiudi.com/data/v1/team/members/50001256)
+2018-04-15 22:54:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/person/statistic_new/50011579> (referer: https://api.dongqiudi.com/data/v1/team/members/50001256)
+2018-04-15 22:54:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/person/statistic_new/50011508> (referer: https://api.dongqiudi.com/data/v1/team/members/50001256)
+2018-04-15 22:54:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/person/statistic_new/50434344> (referer: https://api.dongqiudi.com/data/v1/team/members/50001256)
+2018-04-15 22:54:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/person/statistic_new/50116881> (referer: https://api.dongqiudi.com/data/v1/team/members/50001256)
+2018-04-15 22:54:16 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/person/statistic_new/50031674> (referer: https://api.dongqiudi.com/data/v1/team/members/50001256)
+2018-04-15 22:54:17 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/person/statistic_new/50009961> (referer: https://api.dongqiudi.com/data/v1/team/members/50000735)
+2018-04-15 22:54:17 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/sample/person/50281179> (referer: https://api.dongqiudi.com/data/v1/person/statistic_new/50281179)
+2018-04-15 22:54:17 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.dongqiudi.com/data/v1/sample/person/50281179>
+None
+2018-04-15 22:54:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/sample/person/50157070> (referer: https://api.dongqiudi.com/data/v1/person/statistic_new/50157070)
+2018-04-15 22:54:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.dongqiudi.com/data/v1/sample/person/50157070>
+None
+2018-04-15 22:54:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/sample/person/50150830> (referer: https://api.dongqiudi.com/data/v1/person/statistic_new/50150830)
+2018-04-15 22:54:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.dongqiudi.com/data/v1/sample/person/50150830>
+None
+2018-04-15 22:54:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/sample/person/50125795> (referer: https://api.dongqiudi.com/data/v1/person/statistic_new/50125795)
+2018-04-15 22:54:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.dongqiudi.com/data/v1/sample/person/50125795>
+None
+2018-04-15 22:54:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/sample/person/50111168> (referer: https://api.dongqiudi.com/data/v1/person/statistic_new/50111168)
+2018-04-15 22:54:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.dongqiudi.com/data/v1/sample/person/50111168>
+None
+2018-04-15 22:54:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/sample/person/50078976> (referer: https://api.dongqiudi.com/data/v1/person/statistic_new/50078976)
+2018-04-15 22:54:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.dongqiudi.com/data/v1/sample/person/50078976>
+None
+2018-04-15 22:54:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/sample/person/50043508> (referer: https://api.dongqiudi.com/data/v1/person/statistic_new/50043508)
+2018-04-15 22:54:21 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.dongqiudi.com/data/v1/sample/person/50043508>
+None
+2018-04-15 22:54:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/sample/person/50030660> (referer: https://api.dongqiudi.com/data/v1/person/statistic_new/50030660)
+2018-04-15 22:54:21 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.dongqiudi.com/data/v1/sample/person/50030660>
+None
+2018-04-15 22:54:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/sample/person/50030393> (referer: https://api.dongqiudi.com/data/v1/person/statistic_new/50030393)
+2018-04-15 22:54:22 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.dongqiudi.com/data/v1/sample/person/50030393>
+None
+2018-04-15 22:54:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/sample/person/50018314> (referer: https://api.dongqiudi.com/data/v1/person/statistic_new/50018314)
+2018-04-15 22:54:22 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.dongqiudi.com/data/v1/sample/person/50018314>
+None
+2018-04-15 22:54:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/sample/person/50016810> (referer: https://api.dongqiudi.com/data/v1/person/statistic_new/50016810)
+2018-04-15 22:54:23 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.dongqiudi.com/data/v1/sample/person/50016810>
+None
+2018-04-15 22:54:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/sample/person/50011579> (referer: https://api.dongqiudi.com/data/v1/person/statistic_new/50011579)
+2018-04-15 22:54:23 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.dongqiudi.com/data/v1/sample/person/50011579>
+None
+2018-04-15 22:54:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/sample/person/50011508> (referer: https://api.dongqiudi.com/data/v1/person/statistic_new/50011508)
+2018-04-15 22:54:23 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.dongqiudi.com/data/v1/sample/person/50011508>
+None
+2018-04-15 22:54:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/sample/person/50434344> (referer: https://api.dongqiudi.com/data/v1/person/statistic_new/50434344)
+2018-04-15 22:54:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.dongqiudi.com/data/v1/sample/person/50434344>
+None
+2018-04-15 22:54:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/sample/person/50116881> (referer: https://api.dongqiudi.com/data/v1/person/statistic_new/50116881)
+2018-04-15 22:54:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.dongqiudi.com/data/v1/sample/person/50116881>
+None
+2018-04-15 22:54:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/sample/person/50031674> (referer: https://api.dongqiudi.com/data/v1/person/statistic_new/50031674)
+2018-04-15 22:54:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.dongqiudi.com/data/v1/sample/person/50031674>
+None
+2018-04-15 22:54:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/sample/person/50009961> (referer: https://api.dongqiudi.com/data/v1/person/statistic_new/50009961)
+2018-04-15 22:54:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.dongqiudi.com/data/v1/sample/person/50009961>
+None
+2018-04-15 22:54:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/person/statistic_new/50001152> (referer: https://api.dongqiudi.com/data/v1/team/members/50000735)
+2018-04-15 22:54:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/person/statistic_new/50257182> (referer: https://api.dongqiudi.com/data/v1/team/members/50000735)
+2018-04-15 22:54:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/person/statistic_new/50251302> (referer: https://api.dongqiudi.com/data/v1/team/members/50000735)
+2018-04-15 22:54:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/person/statistic_new/50159298> (referer: https://api.dongqiudi.com/data/v1/team/members/50000735)
+2018-04-15 22:54:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/person/statistic_new/50138928> (referer: https://api.dongqiudi.com/data/v1/team/members/50000735)
+2018-04-15 22:54:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/person/statistic_new/50114396> (referer: https://api.dongqiudi.com/data/v1/team/members/50000735)
+2018-04-15 22:54:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/person/statistic_new/50052383> (referer: https://api.dongqiudi.com/data/v1/team/members/50000735)
+2018-04-15 22:54:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/person/statistic_new/50038194> (referer: https://api.dongqiudi.com/data/v1/team/members/50000735)
+2018-04-15 22:54:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/person/statistic_new/50033711> (referer: https://api.dongqiudi.com/data/v1/team/members/50000735)
+2018-04-15 22:54:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/person/statistic_new/50012791> (referer: https://api.dongqiudi.com/data/v1/team/members/50000735)
+2018-04-15 22:54:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/person/statistic_new/50010398> (referer: https://api.dongqiudi.com/data/v1/team/members/50000735)
+2018-04-15 22:54:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/person/statistic_new/50001189> (referer: https://api.dongqiudi.com/data/v1/team/members/50000735)
+2018-04-15 22:54:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/person/statistic_new/50232738> (referer: https://api.dongqiudi.com/data/v1/team/members/50000735)
+2018-04-15 22:54:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/person/statistic_new/50201477> (referer: https://api.dongqiudi.com/data/v1/team/members/50000735)
+2018-04-15 22:54:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/person/statistic_new/50155911> (referer: https://api.dongqiudi.com/data/v1/team/members/50000735)
+2018-04-15 22:54:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/person/statistic_new/50116593> (referer: https://api.dongqiudi.com/data/v1/team/members/50000735)
+2018-04-15 22:54:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/person/statistic_new/50116584> (referer: https://api.dongqiudi.com/data/v1/team/members/50000735)
+2018-04-15 22:54:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/sample/person/50001152> (referer: https://api.dongqiudi.com/data/v1/person/statistic_new/50001152)
+2018-04-15 22:54:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.dongqiudi.com/data/v1/sample/person/50001152>
+None
+2018-04-15 22:54:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/sample/person/50257182> (referer: https://api.dongqiudi.com/data/v1/person/statistic_new/50257182)
+2018-04-15 22:54:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.dongqiudi.com/data/v1/sample/person/50257182>
+None
+2018-04-15 22:54:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/sample/person/50251302> (referer: https://api.dongqiudi.com/data/v1/person/statistic_new/50251302)
+2018-04-15 22:54:43 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.dongqiudi.com/data/v1/sample/person/50251302>
+None
+2018-04-15 22:54:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/sample/person/50159298> (referer: https://api.dongqiudi.com/data/v1/person/statistic_new/50159298)
+2018-04-15 22:54:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.dongqiudi.com/data/v1/sample/person/50159298>
+None
+2018-04-15 22:54:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/sample/person/50138928> (referer: https://api.dongqiudi.com/data/v1/person/statistic_new/50138928)
+2018-04-15 22:54:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.dongqiudi.com/data/v1/sample/person/50138928>
+None
+2018-04-15 22:54:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/sample/person/50114396> (referer: https://api.dongqiudi.com/data/v1/person/statistic_new/50114396)
+2018-04-15 22:54:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.dongqiudi.com/data/v1/sample/person/50114396>
+None
+2018-04-15 22:54:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/sample/person/50052383> (referer: https://api.dongqiudi.com/data/v1/person/statistic_new/50052383)
+2018-04-15 22:54:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.dongqiudi.com/data/v1/sample/person/50052383>
+None
+2018-04-15 22:54:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/sample/person/50038194> (referer: https://api.dongqiudi.com/data/v1/person/statistic_new/50038194)
+2018-04-15 22:54:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.dongqiudi.com/data/v1/sample/person/50038194>
+None
+2018-04-15 22:54:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/sample/person/50033711> (referer: https://api.dongqiudi.com/data/v1/person/statistic_new/50033711)
+2018-04-15 22:54:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.dongqiudi.com/data/v1/sample/person/50033711>
+None
+2018-04-15 22:54:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/sample/person/50012791> (referer: https://api.dongqiudi.com/data/v1/person/statistic_new/50012791)
+2018-04-15 22:54:47 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.dongqiudi.com/data/v1/sample/person/50012791>
+None
+2018-04-15 22:54:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/sample/person/50010398> (referer: https://api.dongqiudi.com/data/v1/person/statistic_new/50010398)
+2018-04-15 22:54:47 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.dongqiudi.com/data/v1/sample/person/50010398>
+None
+2018-04-15 22:54:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/sample/person/50001189> (referer: https://api.dongqiudi.com/data/v1/person/statistic_new/50001189)
+2018-04-15 22:54:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.dongqiudi.com/data/v1/sample/person/50001189>
+None
+2018-04-15 22:54:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/sample/person/50232738> (referer: https://api.dongqiudi.com/data/v1/person/statistic_new/50232738)
+2018-04-15 22:54:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.dongqiudi.com/data/v1/sample/person/50232738>
+None
+2018-04-15 22:54:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/sample/person/50201477> (referer: https://api.dongqiudi.com/data/v1/person/statistic_new/50201477)
+2018-04-15 22:54:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.dongqiudi.com/data/v1/sample/person/50201477>
+None
+2018-04-15 22:54:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/sample/person/50155911> (referer: https://api.dongqiudi.com/data/v1/person/statistic_new/50155911)
+2018-04-15 22:54:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.dongqiudi.com/data/v1/sample/person/50155911>
+None
+2018-04-15 22:54:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/sample/person/50116593> (referer: https://api.dongqiudi.com/data/v1/person/statistic_new/50116593)
+2018-04-15 22:54:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.dongqiudi.com/data/v1/sample/person/50116593>
+None
+2018-04-15 22:54:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/sample/person/50116584> (referer: https://api.dongqiudi.com/data/v1/person/statistic_new/50116584)
+2018-04-15 22:54:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.dongqiudi.com/data/v1/sample/person/50116584>
+None
+2018-04-15 22:54:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/person/statistic_new/50053051> (referer: https://api.dongqiudi.com/data/v1/team/members/50000735)
+2018-04-15 22:54:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/person/statistic_new/50007977> (referer: https://api.dongqiudi.com/data/v1/team/members/50000735)
+2018-04-15 22:54:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/person/statistic_new/50001303> (referer: https://api.dongqiudi.com/data/v1/team/members/50000735)
+2018-04-15 22:54:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/person/statistic_new/50414122> (referer: https://api.dongqiudi.com/data/v1/team/members/50000735)
+2018-04-15 22:54:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/person/statistic_new/50139120> (referer: https://api.dongqiudi.com/data/v1/team/members/50000735)
+2018-04-15 22:54:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/person/statistic_new/50103854> (referer: https://api.dongqiudi.com/data/v1/team/members/50000735)
+2018-04-15 22:54:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/person/statistic_new/50014704> (referer: https://api.dongqiudi.com/data/v1/team/members/50000735)
+2018-04-15 22:54:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/person/statistic_new/50105105> (referer: https://api.dongqiudi.com/data/v1/team/members/50001982)
+2018-04-15 22:54:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/person/statistic_new/50066582> (referer: https://api.dongqiudi.com/data/v1/team/members/50001982)
+2018-04-15 22:54:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/person/statistic_new/50015117> (referer: https://api.dongqiudi.com/data/v1/team/members/50001982)
+2018-04-15 22:55:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/person/statistic_new/50437584> (referer: https://api.dongqiudi.com/data/v1/team/members/50001982)
+2018-04-15 22:55:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/person/statistic_new/50410713> (referer: https://api.dongqiudi.com/data/v1/team/members/50001982)
+2018-04-15 22:55:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/person/statistic_new/50165029> (referer: https://api.dongqiudi.com/data/v1/team/members/50001982)
+2018-04-15 22:55:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/person/statistic_new/50137538> (referer: https://api.dongqiudi.com/data/v1/team/members/50001982)
+2018-04-15 22:55:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/person/statistic_new/50121322> (referer: https://api.dongqiudi.com/data/v1/team/members/50001982)
+2018-04-15 22:55:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/person/statistic_new/50104446> (referer: https://api.dongqiudi.com/data/v1/team/members/50001982)
+2018-04-15 22:55:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/person/statistic_new/50061433> (referer: https://api.dongqiudi.com/data/v1/team/members/50001982)
+2018-04-15 22:55:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/sample/person/50053051> (referer: https://api.dongqiudi.com/data/v1/person/statistic_new/50053051)
+2018-04-15 22:55:06 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.dongqiudi.com/data/v1/sample/person/50053051>
+None
+2018-04-15 22:55:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/sample/person/50007977> (referer: https://api.dongqiudi.com/data/v1/person/statistic_new/50007977)
+2018-04-15 22:55:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.dongqiudi.com/data/v1/sample/person/50007977>
+None
+2018-04-15 22:55:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/sample/person/50001303> (referer: https://api.dongqiudi.com/data/v1/person/statistic_new/50001303)
+2018-04-15 22:55:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.dongqiudi.com/data/v1/sample/person/50001303>
+None
+2018-04-15 22:55:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/sample/person/50414122> (referer: https://api.dongqiudi.com/data/v1/person/statistic_new/50414122)
+2018-04-15 22:55:09 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.dongqiudi.com/data/v1/sample/person/50414122>
+None
+2018-04-15 22:55:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/sample/person/50139120> (referer: https://api.dongqiudi.com/data/v1/person/statistic_new/50139120)
+2018-04-15 22:55:09 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.dongqiudi.com/data/v1/sample/person/50139120>
+None
+2018-04-15 22:55:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/sample/person/50103854> (referer: https://api.dongqiudi.com/data/v1/person/statistic_new/50103854)
+2018-04-15 22:55:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.dongqiudi.com/data/v1/sample/person/50103854>
+None
+2018-04-15 22:55:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/sample/person/50014704> (referer: https://api.dongqiudi.com/data/v1/person/statistic_new/50014704)
+2018-04-15 22:55:10 [scrapy.extensions.logstats] INFO: Crawled 178 pages (at 82 pages/min), scraped 74 items (at 40 items/min)
+2018-04-15 22:55:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.dongqiudi.com/data/v1/sample/person/50014704>
+None
+2018-04-15 22:55:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/sample/person/50105105> (referer: https://api.dongqiudi.com/data/v1/person/statistic_new/50105105)
+2018-04-15 22:55:11 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.dongqiudi.com/data/v1/sample/person/50105105>
+None
+2018-04-15 22:55:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/sample/person/50066582> (referer: https://api.dongqiudi.com/data/v1/person/statistic_new/50066582)
+2018-04-15 22:55:11 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.dongqiudi.com/data/v1/sample/person/50066582>
+None
+2018-04-15 22:55:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/sample/person/50015117> (referer: https://api.dongqiudi.com/data/v1/person/statistic_new/50015117)
+2018-04-15 22:55:12 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.dongqiudi.com/data/v1/sample/person/50015117>
+None
+2018-04-15 22:55:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/sample/person/50437584> (referer: https://api.dongqiudi.com/data/v1/person/statistic_new/50437584)
+2018-04-15 22:55:12 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.dongqiudi.com/data/v1/sample/person/50437584>
+None
+2018-04-15 22:55:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/sample/person/50410713> (referer: https://api.dongqiudi.com/data/v1/person/statistic_new/50410713)
+2018-04-15 22:55:13 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.dongqiudi.com/data/v1/sample/person/50410713>
+None
+2018-04-15 22:55:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/sample/person/50165029> (referer: https://api.dongqiudi.com/data/v1/person/statistic_new/50165029)
+2018-04-15 22:55:13 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.dongqiudi.com/data/v1/sample/person/50165029>
+None
+2018-04-15 22:55:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/sample/person/50137538> (referer: https://api.dongqiudi.com/data/v1/person/statistic_new/50137538)
+2018-04-15 22:55:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.dongqiudi.com/data/v1/sample/person/50137538>
+None
+2018-04-15 22:55:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/sample/person/50121322> (referer: https://api.dongqiudi.com/data/v1/person/statistic_new/50121322)
+2018-04-15 22:55:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.dongqiudi.com/data/v1/sample/person/50121322>
+None
+2018-04-15 22:55:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/sample/person/50104446> (referer: https://api.dongqiudi.com/data/v1/person/statistic_new/50104446)
+2018-04-15 22:55:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.dongqiudi.com/data/v1/sample/person/50104446>
+None
+2018-04-15 22:55:16 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/sample/person/50061433> (referer: https://api.dongqiudi.com/data/v1/person/statistic_new/50061433)
+2018-04-15 22:55:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.dongqiudi.com/data/v1/sample/person/50061433>
+None
+2018-04-15 22:55:16 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/person/statistic_new/50059093> (referer: https://api.dongqiudi.com/data/v1/team/members/50001982)
+2018-04-15 22:55:17 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/person/statistic_new/50058559> (referer: https://api.dongqiudi.com/data/v1/team/members/50001982)
+2018-04-15 22:55:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/person/statistic_new/50034810> (referer: https://api.dongqiudi.com/data/v1/team/members/50001982)
+2018-04-15 22:55:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/person/statistic_new/50028789> (referer: https://api.dongqiudi.com/data/v1/team/members/50001982)
+2018-04-15 22:55:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/person/statistic_new/50428915> (referer: https://api.dongqiudi.com/data/v1/team/members/50001982)
+2018-04-15 22:55:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/person/statistic_new/50428914> (referer: https://api.dongqiudi.com/data/v1/team/members/50001982)
+2018-04-15 22:55:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/person/statistic_new/50426044> (referer: https://api.dongqiudi.com/data/v1/team/members/50001982)
+2018-04-15 22:55:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/person/statistic_new/50385486> (referer: https://api.dongqiudi.com/data/v1/team/members/50001982)
+2018-04-15 22:55:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/person/statistic_new/50237343> (referer: https://api.dongqiudi.com/data/v1/team/members/50001982)
+2018-04-15 22:55:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/person/statistic_new/50185948> (referer: https://api.dongqiudi.com/data/v1/team/members/50001982)
+2018-04-15 22:55:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/person/statistic_new/50134738> (referer: https://api.dongqiudi.com/data/v1/team/members/50001982)
+2018-04-15 22:55:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/person/statistic_new/50122517> (referer: https://api.dongqiudi.com/data/v1/team/members/50001982)
+2018-04-15 22:55:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/person/statistic_new/50103336> (referer: https://api.dongqiudi.com/data/v1/team/members/50001982)
+2018-04-15 22:55:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/person/statistic_new/50086100> (referer: https://api.dongqiudi.com/data/v1/team/members/50001982)
+2018-04-15 22:55:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/person/statistic_new/50064723> (referer: https://api.dongqiudi.com/data/v1/team/members/50001982)
+2018-04-15 22:55:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/person/statistic_new/50059621> (referer: https://api.dongqiudi.com/data/v1/team/members/50001982)
+2018-04-15 22:55:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/person/statistic_new/50000646> (referer: https://api.dongqiudi.com/data/v1/team/members/50001982)
+2018-04-15 22:55:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/sample/person/50059093> (referer: https://api.dongqiudi.com/data/v1/person/statistic_new/50059093)
+2018-04-15 22:55:31 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.dongqiudi.com/data/v1/sample/person/50059093>
+None
+2018-04-15 22:55:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/sample/person/50058559> (referer: https://api.dongqiudi.com/data/v1/person/statistic_new/50058559)
+2018-04-15 22:55:32 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.dongqiudi.com/data/v1/sample/person/50058559>
+None
+2018-04-15 22:55:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/sample/person/50034810> (referer: https://api.dongqiudi.com/data/v1/person/statistic_new/50034810)
+2018-04-15 22:55:32 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.dongqiudi.com/data/v1/sample/person/50034810>
+None
+2018-04-15 22:55:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/sample/person/50028789> (referer: https://api.dongqiudi.com/data/v1/person/statistic_new/50028789)
+2018-04-15 22:55:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.dongqiudi.com/data/v1/sample/person/50028789>
+None
+2018-04-15 22:55:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/sample/person/50428915> (referer: https://api.dongqiudi.com/data/v1/person/statistic_new/50428915)
+2018-04-15 22:55:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.dongqiudi.com/data/v1/sample/person/50428915>
+None
+2018-04-15 22:55:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/sample/person/50428914> (referer: https://api.dongqiudi.com/data/v1/person/statistic_new/50428914)
+2018-04-15 22:55:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.dongqiudi.com/data/v1/sample/person/50428914>
+None
+2018-04-15 22:55:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/sample/person/50426044> (referer: https://api.dongqiudi.com/data/v1/person/statistic_new/50426044)
+2018-04-15 22:55:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.dongqiudi.com/data/v1/sample/person/50426044>
+None
+2018-04-15 22:55:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/sample/person/50385486> (referer: https://api.dongqiudi.com/data/v1/person/statistic_new/50385486)
+2018-04-15 22:55:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.dongqiudi.com/data/v1/sample/person/50385486>
+None
+2018-04-15 22:55:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/sample/person/50237343> (referer: https://api.dongqiudi.com/data/v1/person/statistic_new/50237343)
+2018-04-15 22:55:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.dongqiudi.com/data/v1/sample/person/50237343>
+None
+2018-04-15 22:55:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/sample/person/50185948> (referer: https://api.dongqiudi.com/data/v1/person/statistic_new/50185948)
+2018-04-15 22:55:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.dongqiudi.com/data/v1/sample/person/50185948>
+None
+2018-04-15 22:55:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/sample/person/50134738> (referer: https://api.dongqiudi.com/data/v1/person/statistic_new/50134738)
+2018-04-15 22:55:37 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.dongqiudi.com/data/v1/sample/person/50134738>
+None
+2018-04-15 22:55:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/sample/person/50122517> (referer: https://api.dongqiudi.com/data/v1/person/statistic_new/50122517)
+2018-04-15 22:55:37 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.dongqiudi.com/data/v1/sample/person/50122517>
+None
+2018-04-15 22:55:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/sample/person/50103336> (referer: https://api.dongqiudi.com/data/v1/person/statistic_new/50103336)
+2018-04-15 22:55:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.dongqiudi.com/data/v1/sample/person/50103336>
+None
+2018-04-15 22:55:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/sample/person/50086100> (referer: https://api.dongqiudi.com/data/v1/person/statistic_new/50086100)
+2018-04-15 22:55:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.dongqiudi.com/data/v1/sample/person/50086100>
+None
+2018-04-15 22:55:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/sample/person/50064723> (referer: https://api.dongqiudi.com/data/v1/person/statistic_new/50064723)
+2018-04-15 22:55:39 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.dongqiudi.com/data/v1/sample/person/50064723>
+None
+2018-04-15 22:55:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/sample/person/50059621> (referer: https://api.dongqiudi.com/data/v1/person/statistic_new/50059621)
+2018-04-15 22:55:39 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.dongqiudi.com/data/v1/sample/person/50059621>
+None
+2018-04-15 22:55:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/sample/person/50000646> (referer: https://api.dongqiudi.com/data/v1/person/statistic_new/50000646)
+2018-04-15 22:55:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.dongqiudi.com/data/v1/sample/person/50000646>
+None
+2018-04-15 22:55:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/person/statistic_new/50000642> (referer: https://api.dongqiudi.com/data/v1/team/members/50001982)
+2018-04-15 22:55:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/person/statistic_new/50431028> (referer: https://api.dongqiudi.com/data/v1/team/members/50001982)
+2018-04-15 22:55:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/person/statistic_new/50248605> (referer: https://api.dongqiudi.com/data/v1/team/members/50001982)
+2018-04-15 22:55:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/person/statistic_new/50216656> (referer: https://api.dongqiudi.com/data/v1/team/members/50001982)
+2018-04-15 22:55:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/person/statistic_new/50105108> (referer: https://api.dongqiudi.com/data/v1/team/members/50001982)
+2018-04-15 22:55:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/person/statistic_new/50007587> (referer: https://api.dongqiudi.com/data/v1/team/members/50001982)
+2018-04-15 22:55:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/person/statistic_new/50007211> (referer: https://api.dongqiudi.com/data/v1/team/members/50001982)
+2018-04-15 22:55:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/person/statistic_new/50100793> (referer: https://api.dongqiudi.com/data/v1/team/members/50001905)
+2018-04-15 22:55:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/person/statistic_new/50033686> (referer: https://api.dongqiudi.com/data/v1/team/members/50001905)
+2018-04-15 22:55:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/person/statistic_new/50008603> (referer: https://api.dongqiudi.com/data/v1/team/members/50001905)
+2018-04-15 22:55:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/person/statistic_new/50441409> (referer: https://api.dongqiudi.com/data/v1/team/members/50001905)
+2018-04-15 22:55:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/person/statistic_new/50235121> (referer: https://api.dongqiudi.com/data/v1/team/members/50001905)
+2018-04-15 22:55:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/person/statistic_new/50158642> (referer: https://api.dongqiudi.com/data/v1/team/members/50001905)
+2018-04-15 22:55:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/person/statistic_new/50088765> (referer: https://api.dongqiudi.com/data/v1/team/members/50001905)
+2018-04-15 22:55:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/person/statistic_new/50027482> (referer: https://api.dongqiudi.com/data/v1/team/members/50001905)
+2018-04-15 22:55:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/person/statistic_new/50011363> (referer: https://api.dongqiudi.com/data/v1/team/members/50001905)
+2018-04-15 22:55:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/person/statistic_new/50441889> (referer: https://api.dongqiudi.com/data/v1/team/members/50001905)
+2018-04-15 22:55:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/sample/person/50000642> (referer: https://api.dongqiudi.com/data/v1/person/statistic_new/50000642)
+2018-04-15 22:55:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.dongqiudi.com/data/v1/sample/person/50000642>
+None
+2018-04-15 22:55:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/sample/person/50431028> (referer: https://api.dongqiudi.com/data/v1/person/statistic_new/50431028)
+2018-04-15 22:55:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.dongqiudi.com/data/v1/sample/person/50431028>
+None
+2018-04-15 22:55:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/sample/person/50248605> (referer: https://api.dongqiudi.com/data/v1/person/statistic_new/50248605)
+2018-04-15 22:55:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.dongqiudi.com/data/v1/sample/person/50248605>
+None
+2018-04-15 22:55:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/sample/person/50216656> (referer: https://api.dongqiudi.com/data/v1/person/statistic_new/50216656)
+2018-04-15 22:55:56 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.dongqiudi.com/data/v1/sample/person/50216656>
+None
+2018-04-15 22:55:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/sample/person/50105108> (referer: https://api.dongqiudi.com/data/v1/person/statistic_new/50105108)
+2018-04-15 22:55:57 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.dongqiudi.com/data/v1/sample/person/50105108>
+None
+2018-04-15 22:55:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/sample/person/50007587> (referer: https://api.dongqiudi.com/data/v1/person/statistic_new/50007587)
+2018-04-15 22:55:57 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.dongqiudi.com/data/v1/sample/person/50007587>
+None
+2018-04-15 22:55:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/sample/person/50007211> (referer: https://api.dongqiudi.com/data/v1/person/statistic_new/50007211)
+2018-04-15 22:55:57 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.dongqiudi.com/data/v1/sample/person/50007211>
+None
+2018-04-15 22:55:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/sample/person/50100793> (referer: https://api.dongqiudi.com/data/v1/person/statistic_new/50100793)
+2018-04-15 22:55:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.dongqiudi.com/data/v1/sample/person/50100793>
+None
+2018-04-15 22:55:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/sample/person/50033686> (referer: https://api.dongqiudi.com/data/v1/person/statistic_new/50033686)
+2018-04-15 22:55:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.dongqiudi.com/data/v1/sample/person/50033686>
+None
+2018-04-15 22:55:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/sample/person/50008603> (referer: https://api.dongqiudi.com/data/v1/person/statistic_new/50008603)
+2018-04-15 22:55:59 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.dongqiudi.com/data/v1/sample/person/50008603>
+None
+2018-04-15 22:55:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/sample/person/50441409> (referer: https://api.dongqiudi.com/data/v1/person/statistic_new/50441409)
+2018-04-15 22:55:59 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.dongqiudi.com/data/v1/sample/person/50441409>
+None
+2018-04-15 22:56:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/sample/person/50235121> (referer: https://api.dongqiudi.com/data/v1/person/statistic_new/50235121)
+2018-04-15 22:56:00 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.dongqiudi.com/data/v1/sample/person/50235121>
+None
+2018-04-15 22:56:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/sample/person/50158642> (referer: https://api.dongqiudi.com/data/v1/person/statistic_new/50158642)
+2018-04-15 22:56:01 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.dongqiudi.com/data/v1/sample/person/50158642>
+None
+2018-04-15 22:56:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/sample/person/50088765> (referer: https://api.dongqiudi.com/data/v1/person/statistic_new/50088765)
+2018-04-15 22:56:01 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.dongqiudi.com/data/v1/sample/person/50088765>
+None
+2018-04-15 22:56:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/sample/person/50027482> (referer: https://api.dongqiudi.com/data/v1/person/statistic_new/50027482)
+2018-04-15 22:56:02 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.dongqiudi.com/data/v1/sample/person/50027482>
+None
+2018-04-15 22:56:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/sample/person/50011363> (referer: https://api.dongqiudi.com/data/v1/person/statistic_new/50011363)
+2018-04-15 22:56:02 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.dongqiudi.com/data/v1/sample/person/50011363>
+None
+2018-04-15 22:56:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/sample/person/50441889> (referer: https://api.dongqiudi.com/data/v1/person/statistic_new/50441889)
+2018-04-15 22:56:03 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.dongqiudi.com/data/v1/sample/person/50441889>
+None
+2018-04-15 22:56:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/person/statistic_new/50393474> (referer: https://api.dongqiudi.com/data/v1/team/members/50001905)
+2018-04-15 22:56:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/person/statistic_new/50280207> (referer: https://api.dongqiudi.com/data/v1/team/members/50001905)
+2018-04-15 22:56:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/person/statistic_new/50271138> (referer: https://api.dongqiudi.com/data/v1/team/members/50001905)
+2018-04-15 22:56:06 [scrapy.core.scraper] ERROR: Spider error processing <GET https://api.dongqiudi.com/data/v1/person/statistic_new/50271138> (referer: https://api.dongqiudi.com/data/v1/team/members/50001905)
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python2.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python2.7/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python2.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python2.7/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "dqdsoccer/spiders/__init__.py", line 41, in get_ability
+    if 'base_info' in jsonpage_ability['league'][0]:
+IndexError: list index out of range
+2018-04-15 22:56:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/person/statistic_new/50193126> (referer: https://api.dongqiudi.com/data/v1/team/members/50001905)
+2018-04-15 22:56:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/person/statistic_new/50191481> (referer: https://api.dongqiudi.com/data/v1/team/members/50001905)
+2018-04-15 22:56:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/person/statistic_new/50119997> (referer: https://api.dongqiudi.com/data/v1/team/members/50001905)
+2018-04-15 22:56:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/person/statistic_new/50088009> (referer: https://api.dongqiudi.com/data/v1/team/members/50001905)
+2018-04-15 22:56:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/person/statistic_new/50030264> (referer: https://api.dongqiudi.com/data/v1/team/members/50001905)
+2018-04-15 22:56:10 [scrapy.extensions.logstats] INFO: Crawled 264 pages (at 86 pages/min), scraped 119 items (at 45 items/min)
+2018-04-15 22:56:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/person/statistic_new/50027081> (referer: https://api.dongqiudi.com/data/v1/team/members/50001905)
+2018-04-15 22:56:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/person/statistic_new/50024194> (referer: https://api.dongqiudi.com/data/v1/team/members/50001905)
+2018-04-15 22:56:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/person/statistic_new/50008681> (referer: https://api.dongqiudi.com/data/v1/team/members/50001905)
+2018-04-15 22:56:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/person/statistic_new/50008592> (referer: https://api.dongqiudi.com/data/v1/team/members/50001905)
+2018-04-15 22:56:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/person/statistic_new/50404570> (referer: https://api.dongqiudi.com/data/v1/team/members/50001905)
+2018-04-15 22:56:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/person/statistic_new/50213616> (referer: https://api.dongqiudi.com/data/v1/team/members/50001905)
+2018-04-15 22:56:16 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/person/statistic_new/50175036> (referer: https://api.dongqiudi.com/data/v1/team/members/50001905)
+2018-04-15 22:56:17 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/person/statistic_new/50042744> (referer: https://api.dongqiudi.com/data/v1/team/members/50001905)
+2018-04-15 22:56:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/person/statistic_new/50046828> (referer: https://api.dongqiudi.com/data/v1/team/members/50000807)
+2018-04-15 22:56:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/sample/person/50393474> (referer: https://api.dongqiudi.com/data/v1/person/statistic_new/50393474)
+2018-04-15 22:56:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.dongqiudi.com/data/v1/sample/person/50393474>
+None
+2018-04-15 22:56:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/sample/person/50280207> (referer: https://api.dongqiudi.com/data/v1/person/statistic_new/50280207)
+2018-04-15 22:56:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.dongqiudi.com/data/v1/sample/person/50280207>
+None
+2018-04-15 22:56:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/person/statistic_new/50001788> (referer: https://api.dongqiudi.com/data/v1/team/members/50000807)
+2018-04-15 22:56:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/sample/person/50193126> (referer: https://api.dongqiudi.com/data/v1/person/statistic_new/50193126)
+2018-04-15 22:56:21 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.dongqiudi.com/data/v1/sample/person/50193126>
+None
+2018-04-15 22:56:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/sample/person/50191481> (referer: https://api.dongqiudi.com/data/v1/person/statistic_new/50191481)
+2018-04-15 22:56:21 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.dongqiudi.com/data/v1/sample/person/50191481>
+None
+2018-04-15 22:56:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/sample/person/50119997> (referer: https://api.dongqiudi.com/data/v1/person/statistic_new/50119997)
+2018-04-15 22:56:22 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.dongqiudi.com/data/v1/sample/person/50119997>
+None
+2018-04-15 22:56:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/sample/person/50088009> (referer: https://api.dongqiudi.com/data/v1/person/statistic_new/50088009)
+2018-04-15 22:56:22 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.dongqiudi.com/data/v1/sample/person/50088009>
+None
+2018-04-15 22:56:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/sample/person/50030264> (referer: https://api.dongqiudi.com/data/v1/person/statistic_new/50030264)
+2018-04-15 22:56:23 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.dongqiudi.com/data/v1/sample/person/50030264>
+None
+2018-04-15 22:56:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/sample/person/50027081> (referer: https://api.dongqiudi.com/data/v1/person/statistic_new/50027081)
+2018-04-15 22:56:23 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.dongqiudi.com/data/v1/sample/person/50027081>
+None
+2018-04-15 22:56:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/sample/person/50024194> (referer: https://api.dongqiudi.com/data/v1/person/statistic_new/50024194)
+2018-04-15 22:56:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.dongqiudi.com/data/v1/sample/person/50024194>
+None
+2018-04-15 22:56:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/sample/person/50008681> (referer: https://api.dongqiudi.com/data/v1/person/statistic_new/50008681)
+2018-04-15 22:56:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.dongqiudi.com/data/v1/sample/person/50008681>
+None
+2018-04-15 22:56:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/sample/person/50008592> (referer: https://api.dongqiudi.com/data/v1/person/statistic_new/50008592)
+2018-04-15 22:56:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.dongqiudi.com/data/v1/sample/person/50008592>
+None
+2018-04-15 22:56:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/sample/person/50404570> (referer: https://api.dongqiudi.com/data/v1/person/statistic_new/50404570)
+2018-04-15 22:56:26 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.dongqiudi.com/data/v1/sample/person/50404570>
+None
+2018-04-15 22:56:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/sample/person/50213616> (referer: https://api.dongqiudi.com/data/v1/person/statistic_new/50213616)
+2018-04-15 22:56:26 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.dongqiudi.com/data/v1/sample/person/50213616>
+None
+2018-04-15 22:56:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/sample/person/50175036> (referer: https://api.dongqiudi.com/data/v1/person/statistic_new/50175036)
+2018-04-15 22:56:27 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.dongqiudi.com/data/v1/sample/person/50175036>
+None
+2018-04-15 22:56:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/sample/person/50042744> (referer: https://api.dongqiudi.com/data/v1/person/statistic_new/50042744)
+2018-04-15 22:56:27 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.dongqiudi.com/data/v1/sample/person/50042744>
+None
+2018-04-15 22:56:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/sample/person/50046828> (referer: https://api.dongqiudi.com/data/v1/person/statistic_new/50046828)
+2018-04-15 22:56:28 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.dongqiudi.com/data/v1/sample/person/50046828>
+None
+2018-04-15 22:56:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/person/statistic_new/50259318> (referer: https://api.dongqiudi.com/data/v1/team/members/50000807)
+2018-04-15 22:56:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/person/statistic_new/50248184> (referer: https://api.dongqiudi.com/data/v1/team/members/50000807)
+2018-04-15 22:56:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/sample/person/50001788> (referer: https://api.dongqiudi.com/data/v1/person/statistic_new/50001788)
+2018-04-15 22:56:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.dongqiudi.com/data/v1/sample/person/50001788>
+None
+2018-04-15 22:56:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/person/statistic_new/50210130> (referer: https://api.dongqiudi.com/data/v1/team/members/50000807)
+2018-04-15 22:56:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/person/statistic_new/50117631> (referer: https://api.dongqiudi.com/data/v1/team/members/50000807)
+2018-04-15 22:56:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/person/statistic_new/50108793> (referer: https://api.dongqiudi.com/data/v1/team/members/50000807)
+2018-04-15 22:56:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/person/statistic_new/50106545> (referer: https://api.dongqiudi.com/data/v1/team/members/50000807)
+2018-04-15 22:56:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/person/statistic_new/50040913> (referer: https://api.dongqiudi.com/data/v1/team/members/50000807)
+2018-04-15 22:56:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/person/statistic_new/50028771> (referer: https://api.dongqiudi.com/data/v1/team/members/50000807)
+2018-04-15 22:56:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/person/statistic_new/50014815> (referer: https://api.dongqiudi.com/data/v1/team/members/50000807)
+2018-04-15 22:56:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/person/statistic_new/50012684> (referer: https://api.dongqiudi.com/data/v1/team/members/50000807)
+2018-04-15 22:56:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/person/statistic_new/50267172> (referer: https://api.dongqiudi.com/data/v1/team/members/50000807)
+2018-04-15 22:56:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/person/statistic_new/50245004> (referer: https://api.dongqiudi.com/data/v1/team/members/50000807)
+2018-04-15 22:56:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/person/statistic_new/50197068> (referer: https://api.dongqiudi.com/data/v1/team/members/50000807)
+2018-04-15 22:56:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/person/statistic_new/50167036> (referer: https://api.dongqiudi.com/data/v1/team/members/50000807)
+2018-04-15 22:56:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/person/statistic_new/50060417> (referer: https://api.dongqiudi.com/data/v1/team/members/50000807)
+2018-04-15 22:56:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/person/statistic_new/50059345> (referer: https://api.dongqiudi.com/data/v1/team/members/50000807)
+2018-04-15 22:56:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/sample/person/50259318> (referer: https://api.dongqiudi.com/data/v1/person/statistic_new/50259318)
+2018-04-15 22:56:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.dongqiudi.com/data/v1/sample/person/50259318>
+None
+2018-04-15 22:56:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/sample/person/50248184> (referer: https://api.dongqiudi.com/data/v1/person/statistic_new/50248184)
+2018-04-15 22:56:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.dongqiudi.com/data/v1/sample/person/50248184>
+None
+2018-04-15 22:56:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/person/statistic_new/50050656> (referer: https://api.dongqiudi.com/data/v1/team/members/50000807)
+2018-04-15 22:56:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/sample/person/50210130> (referer: https://api.dongqiudi.com/data/v1/person/statistic_new/50210130)
+2018-04-15 22:56:41 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.dongqiudi.com/data/v1/sample/person/50210130>
+None
+2018-04-15 22:56:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/sample/person/50117631> (referer: https://api.dongqiudi.com/data/v1/person/statistic_new/50117631)
+2018-04-15 22:56:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.dongqiudi.com/data/v1/sample/person/50117631>
+None
+2018-04-15 22:56:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/sample/person/50108793> (referer: https://api.dongqiudi.com/data/v1/person/statistic_new/50108793)
+2018-04-15 22:56:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.dongqiudi.com/data/v1/sample/person/50108793>
+None
+2018-04-15 22:56:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/sample/person/50106545> (referer: https://api.dongqiudi.com/data/v1/person/statistic_new/50106545)
+2018-04-15 22:56:43 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.dongqiudi.com/data/v1/sample/person/50106545>
+None
+2018-04-15 22:56:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/sample/person/50040913> (referer: https://api.dongqiudi.com/data/v1/person/statistic_new/50040913)
+2018-04-15 22:56:43 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.dongqiudi.com/data/v1/sample/person/50040913>
+None
+2018-04-15 22:56:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/sample/person/50028771> (referer: https://api.dongqiudi.com/data/v1/person/statistic_new/50028771)
+2018-04-15 22:56:43 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.dongqiudi.com/data/v1/sample/person/50028771>
+None
+2018-04-15 22:56:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/sample/person/50014815> (referer: https://api.dongqiudi.com/data/v1/person/statistic_new/50014815)
+2018-04-15 22:56:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.dongqiudi.com/data/v1/sample/person/50014815>
+None
+2018-04-15 22:56:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/sample/person/50012684> (referer: https://api.dongqiudi.com/data/v1/person/statistic_new/50012684)
+2018-04-15 22:56:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.dongqiudi.com/data/v1/sample/person/50012684>
+None
+2018-04-15 22:56:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/sample/person/50267172> (referer: https://api.dongqiudi.com/data/v1/person/statistic_new/50267172)
+2018-04-15 22:56:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.dongqiudi.com/data/v1/sample/person/50267172>
+None
+2018-04-15 22:56:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/sample/person/50245004> (referer: https://api.dongqiudi.com/data/v1/person/statistic_new/50245004)
+2018-04-15 22:56:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.dongqiudi.com/data/v1/sample/person/50245004>
+None
+2018-04-15 22:56:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/sample/person/50197068> (referer: https://api.dongqiudi.com/data/v1/person/statistic_new/50197068)
+2018-04-15 22:56:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.dongqiudi.com/data/v1/sample/person/50197068>
+None
+2018-04-15 22:56:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/sample/person/50167036> (referer: https://api.dongqiudi.com/data/v1/person/statistic_new/50167036)
+2018-04-15 22:56:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.dongqiudi.com/data/v1/sample/person/50167036>
+None
+2018-04-15 22:56:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/sample/person/50060417> (referer: https://api.dongqiudi.com/data/v1/person/statistic_new/50060417)
+2018-04-15 22:56:47 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.dongqiudi.com/data/v1/sample/person/50060417>
+None
+2018-04-15 22:56:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/sample/person/50059345> (referer: https://api.dongqiudi.com/data/v1/person/statistic_new/50059345)
+2018-04-15 22:56:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/person/statistic_new/50027605> (referer: https://api.dongqiudi.com/data/v1/team/members/50000807)
+2018-04-15 22:56:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.dongqiudi.com/data/v1/sample/person/50059345>
+None
+2018-04-15 22:56:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/person/statistic_new/50018388> (referer: https://api.dongqiudi.com/data/v1/team/members/50000807)
+2018-04-15 22:56:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/sample/person/50050656> (referer: https://api.dongqiudi.com/data/v1/person/statistic_new/50050656)
+2018-04-15 22:56:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.dongqiudi.com/data/v1/sample/person/50050656>
+None
+2018-04-15 22:56:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/person/statistic_new/50001802> (referer: https://api.dongqiudi.com/data/v1/team/members/50000807)
+2018-04-15 22:56:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/person/statistic_new/50402782> (referer: https://api.dongqiudi.com/data/v1/team/members/50000807)
+2018-04-15 22:56:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/person/statistic_new/50249473> (referer: https://api.dongqiudi.com/data/v1/team/members/50000807)
+2018-04-15 22:56:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/person/statistic_new/50136018> (referer: https://api.dongqiudi.com/data/v1/team/members/50000807)
+2018-04-15 22:56:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/person/statistic_new/50114433> (referer: https://api.dongqiudi.com/data/v1/team/members/50000807)
+2018-04-15 22:56:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/person/statistic_new/50040087> (referer: https://api.dongqiudi.com/data/v1/team/members/50000807)
+2018-04-15 22:56:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/person/statistic_new/50038044> (referer: https://api.dongqiudi.com/data/v1/team/members/50000807)
+2018-04-15 22:56:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/person/statistic_new/50012355> (referer: https://api.dongqiudi.com/data/v1/team/members/50000809)
+2018-04-15 22:56:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/person/statistic_new/50001771> (referer: https://api.dongqiudi.com/data/v1/team/members/50000809)
+2018-04-15 22:56:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/person/statistic_new/50174069> (referer: https://api.dongqiudi.com/data/v1/team/members/50000809)
+2018-04-15 22:56:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/person/statistic_new/50160684> (referer: https://api.dongqiudi.com/data/v1/team/members/50000809)
+2018-04-15 22:56:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/person/statistic_new/50088115> (referer: https://api.dongqiudi.com/data/v1/team/members/50000809)
+2018-04-15 22:56:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/person/statistic_new/50098314> (referer: https://api.dongqiudi.com/data/v1/team/members/50000809)
+2018-04-15 22:56:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/person/statistic_new/50039430> (referer: https://api.dongqiudi.com/data/v1/team/members/50000809)
+2018-04-15 22:56:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/sample/person/50027605> (referer: https://api.dongqiudi.com/data/v1/person/statistic_new/50027605)
+2018-04-15 22:56:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.dongqiudi.com/data/v1/sample/person/50027605>
+None
+2018-04-15 22:56:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/sample/person/50018388> (referer: https://api.dongqiudi.com/data/v1/person/statistic_new/50018388)
+2018-04-15 22:56:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.dongqiudi.com/data/v1/sample/person/50018388>
+None
+2018-04-15 22:56:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/sample/person/50001802> (referer: https://api.dongqiudi.com/data/v1/person/statistic_new/50001802)
+2018-04-15 22:56:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/person/statistic_new/50012699> (referer: https://api.dongqiudi.com/data/v1/team/members/50000809)
+2018-04-15 22:56:59 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.dongqiudi.com/data/v1/sample/person/50001802>
+None
+2018-04-15 22:56:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/sample/person/50402782> (referer: https://api.dongqiudi.com/data/v1/person/statistic_new/50402782)
+2018-04-15 22:56:59 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.dongqiudi.com/data/v1/sample/person/50402782>
+None
+2018-04-15 22:57:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/sample/person/50249473> (referer: https://api.dongqiudi.com/data/v1/person/statistic_new/50249473)
+2018-04-15 22:57:00 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.dongqiudi.com/data/v1/sample/person/50249473>
+None
+2018-04-15 22:57:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/sample/person/50136018> (referer: https://api.dongqiudi.com/data/v1/person/statistic_new/50136018)
+2018-04-15 22:57:00 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.dongqiudi.com/data/v1/sample/person/50136018>
+None
+2018-04-15 22:57:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/sample/person/50114433> (referer: https://api.dongqiudi.com/data/v1/person/statistic_new/50114433)
+2018-04-15 22:57:01 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.dongqiudi.com/data/v1/sample/person/50114433>
+None
+2018-04-15 22:57:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/sample/person/50040087> (referer: https://api.dongqiudi.com/data/v1/person/statistic_new/50040087)
+2018-04-15 22:57:01 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.dongqiudi.com/data/v1/sample/person/50040087>
+None
+2018-04-15 22:57:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/sample/person/50038044> (referer: https://api.dongqiudi.com/data/v1/person/statistic_new/50038044)
+2018-04-15 22:57:02 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.dongqiudi.com/data/v1/sample/person/50038044>
+None
+2018-04-15 22:57:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/sample/person/50012355> (referer: https://api.dongqiudi.com/data/v1/person/statistic_new/50012355)
+2018-04-15 22:57:02 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.dongqiudi.com/data/v1/sample/person/50012355>
+None
+2018-04-15 22:57:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/sample/person/50001771> (referer: https://api.dongqiudi.com/data/v1/person/statistic_new/50001771)
+2018-04-15 22:57:03 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.dongqiudi.com/data/v1/sample/person/50001771>
+None
+2018-04-15 22:57:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/sample/person/50174069> (referer: https://api.dongqiudi.com/data/v1/person/statistic_new/50174069)
+2018-04-15 22:57:03 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.dongqiudi.com/data/v1/sample/person/50174069>
+None
+2018-04-15 22:57:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/sample/person/50160684> (referer: https://api.dongqiudi.com/data/v1/person/statistic_new/50160684)
+2018-04-15 22:57:04 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.dongqiudi.com/data/v1/sample/person/50160684>
+None
+2018-04-15 22:57:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/sample/person/50088115> (referer: https://api.dongqiudi.com/data/v1/person/statistic_new/50088115)
+2018-04-15 22:57:04 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.dongqiudi.com/data/v1/sample/person/50088115>
+None
+2018-04-15 22:57:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/sample/person/50098314> (referer: https://api.dongqiudi.com/data/v1/person/statistic_new/50098314)
+2018-04-15 22:57:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.dongqiudi.com/data/v1/sample/person/50098314>
+None
+2018-04-15 22:57:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/sample/person/50039430> (referer: https://api.dongqiudi.com/data/v1/person/statistic_new/50039430)
+2018-04-15 22:57:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.dongqiudi.com/data/v1/sample/person/50039430>
+None
+2018-04-15 22:57:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/person/statistic_new/50001867> (referer: https://api.dongqiudi.com/data/v1/team/members/50000809)
+2018-04-15 22:57:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/person/statistic_new/50394289> (referer: https://api.dongqiudi.com/data/v1/team/members/50000809)
+2018-04-15 22:57:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/person/statistic_new/50238388> (referer: https://api.dongqiudi.com/data/v1/team/members/50000809)
+2018-04-15 22:57:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/sample/person/50012699> (referer: https://api.dongqiudi.com/data/v1/person/statistic_new/50012699)
+2018-04-15 22:57:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/person/statistic_new/50158029> (referer: https://api.dongqiudi.com/data/v1/team/members/50000809)
+2018-04-15 22:57:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.dongqiudi.com/data/v1/sample/person/50012699>
+None
+2018-04-15 22:57:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/person/statistic_new/50148757> (referer: https://api.dongqiudi.com/data/v1/team/members/50000809)
+2018-04-15 22:57:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/person/statistic_new/50136391> (referer: https://api.dongqiudi.com/data/v1/team/members/50000809)
+2018-04-15 22:57:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/person/statistic_new/50136397> (referer: https://api.dongqiudi.com/data/v1/team/members/50000809)
+2018-04-15 22:57:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/person/statistic_new/50090804> (referer: https://api.dongqiudi.com/data/v1/team/members/50000809)
+2018-04-15 22:57:10 [scrapy.extensions.logstats] INFO: Crawled 367 pages (at 103 pages/min), scraped 170 items (at 51 items/min)
+2018-04-15 22:57:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/person/statistic_new/50046338> (referer: https://api.dongqiudi.com/data/v1/team/members/50000809)
+2018-04-15 22:57:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/person/statistic_new/50039140> (referer: https://api.dongqiudi.com/data/v1/team/members/50000809)
+2018-04-15 22:57:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/person/statistic_new/50221254> (referer: https://api.dongqiudi.com/data/v1/team/members/50000809)
+2018-04-15 22:57:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/person/statistic_new/50256530> (referer: https://api.dongqiudi.com/data/v1/team/members/50000809)
+2018-04-15 22:57:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/person/statistic_new/50201416> (referer: https://api.dongqiudi.com/data/v1/team/members/50000809)
+2018-04-15 22:57:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/person/statistic_new/50042568> (referer: https://api.dongqiudi.com/data/v1/team/members/50000809)
+2018-04-15 22:57:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/person/statistic_new/50137626> (referer: https://api.dongqiudi.com/data/v1/team/members/50000809)
+2018-04-15 22:57:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/person/statistic_new/50025651> (referer: https://api.dongqiudi.com/data/v1/team/members/50000809)
+2018-04-15 22:57:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/sample/person/50001867> (referer: https://api.dongqiudi.com/data/v1/person/statistic_new/50001867)
+2018-04-15 22:57:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.dongqiudi.com/data/v1/sample/person/50001867>
+None
+2018-04-15 22:57:16 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/sample/person/50394289> (referer: https://api.dongqiudi.com/data/v1/person/statistic_new/50394289)
+2018-04-15 22:57:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.dongqiudi.com/data/v1/sample/person/50394289>
+None
+2018-04-15 22:57:17 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/sample/person/50238388> (referer: https://api.dongqiudi.com/data/v1/person/statistic_new/50238388)
+2018-04-15 22:57:17 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.dongqiudi.com/data/v1/sample/person/50238388>
+None
+2018-04-15 22:57:17 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/sample/person/50158029> (referer: https://api.dongqiudi.com/data/v1/person/statistic_new/50158029)
+2018-04-15 22:57:17 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/person/statistic_new/50171411> (referer: https://api.dongqiudi.com/data/v1/team/members/50001587)
+2018-04-15 22:57:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.dongqiudi.com/data/v1/sample/person/50158029>
+None
+2018-04-15 22:57:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/sample/person/50148757> (referer: https://api.dongqiudi.com/data/v1/person/statistic_new/50148757)
+2018-04-15 22:57:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.dongqiudi.com/data/v1/sample/person/50148757>
+None
+2018-04-15 22:57:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/person/statistic_new/50130510> (referer: https://api.dongqiudi.com/data/v1/team/members/50001587)
+2018-04-15 22:57:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/sample/person/50136397> (referer: https://api.dongqiudi.com/data/v1/person/statistic_new/50136397)
+2018-04-15 22:57:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.dongqiudi.com/data/v1/sample/person/50136397>
+None
+2018-04-15 22:57:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/sample/person/50090804> (referer: https://api.dongqiudi.com/data/v1/person/statistic_new/50090804)
+2018-04-15 22:57:21 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.dongqiudi.com/data/v1/sample/person/50090804>
+None
+2018-04-15 22:57:21 [scrapy.crawler] INFO: Received SIGTERM, shutting down gracefully. Send again to force 
+2018-04-15 22:57:21 [scrapy.core.engine] INFO: Closing spider (shutdown)
+2018-04-15 22:57:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/sample/person/50046338> (referer: https://api.dongqiudi.com/data/v1/person/statistic_new/50046338)
+2018-04-15 22:57:21 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.dongqiudi.com/data/v1/sample/person/50046338>
+None
+2018-04-15 22:57:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/sample/person/50039140> (referer: https://api.dongqiudi.com/data/v1/person/statistic_new/50039140)
+2018-04-15 22:57:22 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.dongqiudi.com/data/v1/sample/person/50039140>
+None
+2018-04-15 22:57:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/sample/person/50136391> (referer: https://api.dongqiudi.com/data/v1/person/statistic_new/50136391)
+2018-04-15 22:57:22 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.dongqiudi.com/data/v1/sample/person/50136391>
+None
+2018-04-15 22:57:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/sample/person/50256530> (referer: https://api.dongqiudi.com/data/v1/person/statistic_new/50256530)
+2018-04-15 22:57:23 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.dongqiudi.com/data/v1/sample/person/50256530>
+None
+2018-04-15 22:57:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/sample/person/50201416> (referer: https://api.dongqiudi.com/data/v1/person/statistic_new/50201416)
+2018-04-15 22:57:23 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.dongqiudi.com/data/v1/sample/person/50201416>
+None
+2018-04-15 22:57:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/sample/person/50042568> (referer: https://api.dongqiudi.com/data/v1/person/statistic_new/50042568)
+2018-04-15 22:57:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.dongqiudi.com/data/v1/sample/person/50042568>
+None
+2018-04-15 22:57:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.dongqiudi.com/data/v1/sample/person/50137626> (referer: https://api.dongqiudi.com/data/v1/person/statistic_new/50137626)
+2018-04-15 22:57:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.dongqiudi.com/data/v1/sample/person/50137626>
+None
+2018-04-15 22:57:25 [scrapy.crawler] INFO: Received SIGINT twice, forcing unclean shutdown

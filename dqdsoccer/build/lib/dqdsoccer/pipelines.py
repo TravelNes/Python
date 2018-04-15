@@ -7,7 +7,16 @@
 from dqdsoccer.SoccerSQL import SoccerSql
 from dqdsoccer.items import DqdsoccerItem
 
-
+'''
+item['appearance'] = response.meta['appearance']
+item['starts'] = response.meta['starts']
+item['goals'] = response.meta['goals']
+item['assists'] = response.meta['assists']
+item['success_pass_rate'] = response.meta['success_pass_rate']
+item['avg_tackles'] = response.meta['avg_tackles']
+item['avg_interceptions'] = response.meta['avg_interceptions']
+item['avg_clearances'] = response.meta['avg_clearances']
+'''
 class DqdsoccerPipeline(object):
     def process_item(self, item, spider):
         if isinstance(item, DqdsoccerItem):
@@ -17,8 +26,17 @@ class DqdsoccerPipeline(object):
             role = item['role'].encode('utf-8')
             shirtnumber = item['shirtnumber'].encode('utf-8')
             rank = item['rank'].encode('utf-8')
+            appearance = item['appearance']
+            starts = item['starts']
+            goals = item['goals']
+            assists = item['assists']
+            success_pass_rate = item['success_pass_rate']
+            avg_tackles = item['avg_tackles']
+            avg_interceptions = item['avg_interceptions']
+            avg_clearances = item['avg_clearances']
             rest = SoccerSql.player_exist(name)
             if rest==1:
                 print '已经存在'
             else:
-                SoccerSql.insert_db(name, team, country, role, shirtnumber, rank)
+                SoccerSql.insert_db(name, team, country, role, shirtnumber, rank, appearance,
+                                    starts, goals, assists, success_pass_rate, avg_tackles, avg_interceptions, avg_clearances)
